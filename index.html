@@ -21,27 +21,31 @@
   <div class="header-container">
     <a href="#">
       <div class="logo">
-        LOGO
+        WARCHIEF-GAMING
       </div>
     </a>
-    <div class="toggle">
-      X
-    </div>
+    <div class="toggle" onclick="toggleMenu();"></div>
   </div>
 </div>
 <!-- header END -->
 
 <!-- hero section -->
-<section class="section-100">
+<section class="section-100" id="home">
   <div class="container">
+    <div class="count-down-timer">
+
+    </div>
     <h2>Warchief Gaming</h2>
     <h1>Gaming Streaming</h1>
+
+    <h4>Powered by: NextGen</h4>
+    <h4>Monster Drink</h4>
   </div>
 </section>
 <!-- hero section END -->
 
 <!-- gaming streams -->
-<section class="section-100">
+<section class="section-100" id="schedule">
   <div class="container">
     <h2>What games are streamed</h2>
   </div>
@@ -49,7 +53,7 @@
 <!-- gaming streams END -->
 
 <!-- nextgen -->
-<section class="section-100">
+<section class="section-100" id="nextgen">
   <div class="container">
     <h2>nextgen</h2>
   </div>
@@ -57,7 +61,7 @@
 <!-- nextgen END -->
 
 <!-- monster -->
-<section class="section-min-100">
+<section class="section-min-100" id="monster">
   <div class="container">
     <h2>monster</h2>
   </div>
@@ -72,5 +76,17 @@
 </footer>
 <!-- footer END -->
 
+<!-- sidemenu -->
+<div class="sidemenu">
+  <ul>
+    <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+    <li><a href="#schedule" onclick="toggleMenu();">schedule</a></li>
+    <li><a href="#nextgen" onclick="toggleMenu();">nextgen</a></li>
+    <li><a href="#monster" onclick="toggleMenu();">monster</a></li>
+  </ul>
+</div>
+<!-- sidemenu END -->
+
+  <script src="js/smoothScroll.js"></script>
 </body>
 </html>
