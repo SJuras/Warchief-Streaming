@@ -43,9 +43,16 @@ a {
 
 .container {
   width: 100%;
+  padding: 100px;
+  position: relative;
+}
+
+.container-hero {
+  width: 100%;
   height: 100vh;
   padding: 100px;
   position: relative;
+  overflow: hidden;
 }
 
 .btn {
@@ -249,6 +256,11 @@ a {
 .schedule-section {
   background-color: #0d022c;
 }
+
+.container h2 {
+  color: #fff;
+  font-size: 24px;
+}
 /* schedule section END */
 
 /* nextgen section */
@@ -275,7 +287,6 @@ a {
   flex-direction: column;
   background-color: #0d022c;
   border-radius: 10px;
-  height: 100%;
   padding: 60px;
 }
 
@@ -350,5 +361,78 @@ a {
 /* footer */
 footer {
   background-color: #0d022c;
+}
+
+.footer-box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.footer-box-1 a h4,
+.footer-box-2 h4 {
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.footer-box-1 p {
+  color: #fff;
+}
+
+.footer-row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0px;
+}
+
+.footer-box-1,
+.footer-box-2 {
+  width: 50%;
+  padding: 30px;
+}
+
+.footer-box-1 a h4::after,
+.footer-box-2 h4::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0px;
+  width: 50%;
+  height: 3px;
+  background-color: #b30561;
+}
+
+.footer-row-3 p {
+  color: #fff;
+  text-align: center;
+}
+
+.footer-box-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.footer-box-2-half ul li {
+  margin-bottom: 6px;
+}
+
+.footer-box-2-half ul li a {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.footer-box-2-half ul li:hover a {
+  color: #10a9bf;
 }
 /* footer END */
