@@ -75,6 +75,10 @@ a {
   box-shadow: 0 5px 20px rgba(121, 255, 202, 0.2);
 }
 
+.logo {
+  color: #fff;
+}
+
 .header-container {
   width: 100%;
   padding: 20px 100px;
@@ -157,23 +161,61 @@ a {
   background-position: center;
 }
 
-.hero-container h1 {
+.hero-container h2 {
   color: #fff;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 800;
 }
 
-.hero-container h2 {
+.hero-container h1 {
   color: #fff;
-  font-size: 40px;
+  font-size: 32px;
+  letter-spacing: 6px;
   font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.hero-container h4 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.hero-links-container {
+  display: flex;
+  align-items: center;
+  width: 650px;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.hero-links-img {
+  width: 300px;
+  height: auto;
+  transition: 0.5s;
+}
+
+.hero-links-img:hover {
+  transform: scale(1.1);
+}
+
+.hero-links-img img {
+  height: 100%;
+  width: 100%;
 }
 
 .count-down-timer {
   width: 100%;
   height: 100px;
   background-color: #1b0c57;
+  padding: 20px;
   border-radius: 10px;
+}
+
+.count-down-timer h5 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
 }
 
 .orc {
@@ -185,7 +227,19 @@ a {
   z-index: 900
 }
 
-.orc img {
+.monster-can {
+  position: absolute;
+  left: 30%;
+  transform: translateX(-30%);
+  bottom: -120px;
+  width: 300px;
+  z-index: 890;
+
+  display: none;
+}
+
+.orc img,
+.monster-can img {
   width: 100%;
   height: 100%;
 }
