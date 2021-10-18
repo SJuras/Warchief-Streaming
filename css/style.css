@@ -1,8 +1,23 @@
+@font-face {
+   font-family: 'Montserrat' ;
+   src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+
+/*
+colors:
+
+red: #b30561;
+light-blue; #10a9bf;
+blue: #1b0c57;
+dark-blue: #0d022c;
+*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -24,6 +39,20 @@ a {
   height: 100vh;
   padding: 50px 100px;
   position: relative;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding: 15px 30px;
+  background-color: #b30561;
+  border-radius: 4px;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background-color: #10a9bf;
 }
 
 /* header */
