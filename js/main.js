@@ -20,6 +20,10 @@ const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 
+// switch visibility from clock to live info once the countdown reaches 0;
+const clock = document.querySelectorAll(".clock");
+const live = document.querySelectorAll(".live-info");
+
 const currentYear = new Date().getFullYear();
 
 // hardcoded zero-date
@@ -39,6 +43,12 @@ function updateCountdownTimer(){
   hours.innerHTML = h < 10 ? '0' + h : h;
   minutes.innerHTML = m < 10 ? '0' + m : m;
   seconds.innerHTML = s < 10 ? '0' + s : s;
+
+  // show live info, hide clock once countdown reaches zeros. 
+  if(d === 0 && h === 0 && m === 0 && s === 0){
+    live.classList.add("live");
+    clock.classList.add("not-visible");
+  }
 }
 
 setInterval(updateCountdownTimer, 1000);
