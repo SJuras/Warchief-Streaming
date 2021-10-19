@@ -938,6 +938,12 @@ footer {
     left: -40px;
   }
 
+  .icons h5 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
   .icons ul li {
     margin: 12px;
   }
@@ -952,6 +958,16 @@ footer {
 
   .footer-box-outer-part-1 h4 {
     font-size: 18px;
+  }
+
+  .footer-box-outer-part-2 i {
+    font-size: 60px;
+    margin-bottom: 24px;
+  }
+
+  .footer-box-outer-part-2 h5 {
+    font-size: 24px;
+    text-align: center;
   }
 
   .footer-box-2 {
