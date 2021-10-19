@@ -783,6 +783,30 @@ footer {
   }
 }
 
+@keyframe breathing2 {
+  0% {
+    bottom: -200px;
+  }
+  50% {
+    bottom: -206px;
+  }
+  100% {
+    bottom: -200px;
+  }
+}
+
+@keyframe breathing3 {
+  0% {
+    bottom: -240px;
+  }
+  50% {
+    bottom: -246px;
+  }
+  100% {
+    bottom: -240px;
+  }
+}
+
 /* media queries */
 @media (max-width:1600px){
   .orc {
@@ -1028,6 +1052,8 @@ footer {
   .orc {
     right: -60px;
     bottom: -200px;
+
+    animation: 3s breathing2 infinite;
   }
 
   .title-dissapear {
@@ -1126,6 +1152,8 @@ footer {
   .orc {
     right: -80px;
     bottom: -240px;
+
+    animation: 3s breathing3 infinite;
   }
 
   .time {
