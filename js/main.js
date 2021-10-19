@@ -44,8 +44,8 @@ function updateCountdownTimer(){
   minutes.innerHTML = m < 10 ? '0' + m : m;
   seconds.innerHTML = s < 10 ? '0' + s : s;
 
-  // show live info, hide clock once countdown reaches zeros. 
-  if(d === 0 && h === 0 && m === 0 && s === 0){
+  // show live info, hide clock once countdown reaches zeros.
+  if(d === 00 && h === 00 && m === 00 && s === 00){
     live.classList.add("live");
     clock.classList.add("not-visible");
   }
