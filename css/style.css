@@ -184,7 +184,8 @@ a {
 
 .hero-container h4 {
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .hero-links-container {
@@ -346,6 +347,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  box-shadow: -5px -5px 0px #b30561, 5px 5px 0px #10a9bf;
 }
 
 .nextgen-intro-img,
@@ -367,7 +371,7 @@ a {
 }
 
 .nextgen-service-box {
-  width: 400px;
+  max-width: 400px;
   height: 500px;
   border-radius: 10px;
   background-color: #fff;
@@ -429,6 +433,68 @@ a {
 /* monster section */
 .monster-section {
   background-color: #0d022c;
+}
+
+.monster-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 240px;
+}
+
+.monster-drink-box {
+  width: 50%;
+  height: 300px;
+  padding: 24px;
+}
+
+.monster-can-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: -5px -5px 0px #b30561, 5px 5px 0px #10a9bf;
+  height: 400px;
+  transition: 0.5s;
+}
+
+.monster-can-left {
+  width: 50%;
+  height: 100%;
+  background-color: #1b0c57;
+  border-radius: 20px 0px 0px 20px;
+  position: relative;
+}
+
+.monster-can {
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  max-width: 200px;
+  height: auto;
+  transition: 0.5s;
+}
+
+.monster-can img {
+  width: 100%;
+  height: 100%;
+}
+
+.monster-can-box:hover {
+  box-shadow: -10px -10px 0px #b30561, 10px 10px 0px #10a9bf;
+}
+
+.monster-can-box:hover .monster-can {
+  transform: scale(1.1) rotate(15deg);
+}
+
+.monster-can-right {
+  width: 50%;
+  height: 100%;
+  background-color: grey;
+  border-radius: 0px 20px 20px 0px;
 }
 /* monster section END */
 
