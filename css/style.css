@@ -1099,3 +1099,29 @@ footer {
     margin-bottom: 24px;
   }
 }
+
+@media (max-width:424px){
+
+  .hero-container h2 {
+    font-size: 32px;
+  }
+
+  .orc {
+    right: -80px;
+    bottom: -240px;
+  }
+}
+
+@media (max-width:325px){
+  .hero-container h2 {
+    font-size: 24px;
+  }
+
+  .hero-container h1 {
+    font-size: 18px;
+  }
+
+  .time {
+    padding: 10px;
+  }
+}
