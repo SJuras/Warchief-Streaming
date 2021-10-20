@@ -54,3 +54,12 @@ function updateCountdownTimer(){
 setInterval(updateCountdownTimer, 1000);
 
 // countdown timer END
+
+
+// Parallax
+const parallax = document.getElementById("para");
+
+window.addEventListener("scroll", function(){
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * 0.7 + "px";
+});
