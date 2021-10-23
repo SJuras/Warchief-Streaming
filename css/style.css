@@ -470,9 +470,26 @@ a {
   max-width: 200px;
   height: auto;
   transition: 0.5s;
+  z-index: 100;
 }
 
 .monster-can img {
+  width: 100%;
+  height: 100%;
+}
+
+.burst-container {
+  position: absolute;
+  bottom: -30%;
+  left: -30%;
+  width: 500px;
+  height: auto;
+  transition: 0.5s;
+  z-index: 99;
+  transform: scale(0);
+}
+
+.burst-container img {
   width: 100%;
   height: 100%;
 }
@@ -483,6 +500,10 @@ a {
 
 .monster-can-box:hover .monster-can {
   transform: scale(1.1) rotate(15deg);
+}
+
+.monster-can-box:hover .burst-container {
+  transform: scale(1);
 }
 
 .monster-can-right {
@@ -859,16 +880,13 @@ footer {
     right: 10%;
   }
 
-  .nextgen-services-container {
-    flex-direction: column;
-  }
-
   .nextgen-service-box {
     max-width: initial;
     width: 60%;
     margin: 0 auto;
     margin-bottom: 42px;
     height: 500px;
+    max-width: 300px;
   }
 }
 
@@ -919,6 +937,12 @@ footer {
   }
 }
 
+@media (max-width:1165px){
+  .nextgen-service-box {
+    max-width: 250px;
+  }
+}
+
 @media (max-width:1020px){
 
   .orc {
@@ -940,7 +964,12 @@ footer {
     padding: 100px 30px;
   }
 
+  .nextgen-services-container {
+    flex-direction: column;
+  }
+
   .nextgen-service-box {
+    max-width: initial;
     width: 100%;
   }
 
