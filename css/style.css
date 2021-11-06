@@ -520,8 +520,27 @@ a {
 .monster-can-right {
   width: 50%;
   height: 100%;
-  background-color: grey;
+  background-color: #1b0c57;
   border-radius: 0px 20px 20px 0px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.monster-can-right h4 {
+  color: #10a9bf;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.monster-can-right p {
+  color: #fff;
+  margin-bottom: 6px;
+  text-align: center;
 }
 /* monster section END */
 
