@@ -316,13 +316,15 @@ a {
 }
 
 .next-stream-announcement {
-  margin-bottom: 24px;
+  margin-bottom: 42px;
+  text-align: center;
 }
 
 .next-stream-announcement h4 {
   color: #b30561;
   font-size: 38px;
   font-weight: 700;
+  margin-bottom: 24px;
 }
 
 .next-stream-timeplace {
@@ -340,6 +342,14 @@ a {
   font-weight: 500;
 }
 
+.stream-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
 .stream-link,
 .stream-link a {
   color: #fff;
@@ -350,6 +360,7 @@ a {
   color: #10a9bf;
   transform: translateY(-6px);
 }
+
 /* schedule section END */
 
 /* nextgen section */
@@ -587,11 +598,16 @@ a {
 
 .row-3 {
   box-shadow: -5px -5px 0px #10a9bf, 5px 5px 0px #fff;
+  justify-content: space-around;
 }
 
 .row-3:hover {
   background-color: #470175;
   box-shadow: -10px -10px 0px #10a9bf, 10px 10px 0px #fff;
+}
+
+.row-3:hover .follow-title {
+  transform: scale(1.1);
 }
 
 .profile,
@@ -604,6 +620,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.follow-title {
+  color: #fff;
+  font-size: 2em;
+  transition: 0.5s;
 }
 
 .profile-img {
@@ -1221,6 +1243,10 @@ footer {
   .time {
     padding: 10px;
   }
+
+  .follow-title {
+    font-size: 1.4em;
+  }
 }
 
 @media (max-width:325px){
@@ -1230,6 +1256,10 @@ footer {
 
   .hero-container h1 {
     font-size: 18px;
+  }
+
+  .follow-title {
+    font-size: 1.2em;
   }
 
 }
