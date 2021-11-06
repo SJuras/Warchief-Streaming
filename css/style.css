@@ -1262,4 +1262,8 @@ footer {
     font-size: 1.2em;
   }
 
+  .next-stream-announcement a {
+    font-size: 14px;
+  }
+
 }
