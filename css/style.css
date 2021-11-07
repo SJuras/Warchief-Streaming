@@ -1225,6 +1225,11 @@ footer {
     font-size: 24px;
   }
 
+  a.para-title h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
   .footer-container {
     padding: 100px 10px 20px;
   }
@@ -1274,6 +1279,10 @@ footer {
   .follow-title {
     font-size: 1.4em;
   }
+
+  a.para-title h2 {
+    display: none;
+  }
 }
 
 @media (max-width:325px){
@@ -1282,7 +1291,7 @@ footer {
   }
 
   .hero-container h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .follow-title {
