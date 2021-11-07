@@ -1070,6 +1070,10 @@ footer {
   .footer-box-2 {
     width: 80%;
   }
+
+  #monster {
+    overflow: hidden;
+  }
 }
 
 @media (max-width:880px){
