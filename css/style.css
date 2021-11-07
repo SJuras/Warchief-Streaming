@@ -560,7 +560,7 @@ a {
   align-items: center;
 }
 
-.para-title {
+a.para-title {
   width: 50%;
   height: auto;
 }
@@ -568,6 +568,14 @@ a {
 .para-title img {
   width: 100%;
   height: 100%;
+  margin-bottom: 24px;
+}
+
+a.para-title h2 {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 10px;
+  color: #000;
 }
 /* parallax END */
 
